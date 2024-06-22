@@ -9,8 +9,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'python -m pip install --upgrade pip' // Correct command to upgrade pip
-                bat 'pip install -r requirements.txt'
+                bat 'python -m pip install --upgrade pip --user'
+                bat 'pip install -r requirements.txt --user'
             }
         }
         stage('Test') {
