@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'pip install --upgrade pip' // Upgrade pip to the latest version
+                bat 'python -m pip install --upgrade pip' // Correct command to upgrade pip
                 bat 'pip install -r requirements.txt'
             }
         }
