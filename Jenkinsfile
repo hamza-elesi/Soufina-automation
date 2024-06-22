@@ -7,9 +7,13 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/hamza-elesi/Soufina-automation.git'
             }
         }
+        stage('Setup') {
+            steps {
+                bat 'python -m ensurepip --upgrade || echo Pip already installed'
+            }
+        }
         stage('Build') {
             steps {
-                bat 'python -m pip install --upgrade pip --user'
                 bat 'pip install -r requirements.txt --user'
             }
         }
