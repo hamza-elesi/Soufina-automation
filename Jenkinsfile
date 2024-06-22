@@ -9,17 +9,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
         stage('Test') {
             steps {
-                sh 'python -m unittest discover -s src'
+                bat 'python -m unittest discover -s src'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'bash deploy.sh'
+                bat 'deploy.bat'
             }
         }
     }
