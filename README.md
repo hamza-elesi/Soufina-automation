@@ -7,7 +7,6 @@ This project automates the build, test, and deployment process for a motor contr
 - `src/motor_control.py`: Motor control code.
 - `src/test_motor_control.py`: Unit tests for motor control code.
 - `Jenkinsfile`: Jenkins pipeline configuration.
-- `sonar-project.properties`: SonarQube configuration.
 - `deploy.sh`: Deployment script.
 - `requirements.txt`: Python dependencies.
 - `README.md`: Project documentation.
@@ -16,5 +15,5 @@ This project automates the build, test, and deployment process for a motor contr
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/hamza-elesi/automation-pipe.git
+   git clone https://github.com/your-username/automation-pipe.git
    cd automation-pipe
