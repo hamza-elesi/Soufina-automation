@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                bat 'pip install --upgrade pip' // Upgrade pip to the latest version
                 bat 'pip install -r requirements.txt'
             }
         }
